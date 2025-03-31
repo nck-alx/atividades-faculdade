@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 13</title>
+    <!--Efetuar a leitura de um valor inteiro positivo ou negativo e apresentar o número lido como sendo um valor positivo, ou seja, o programa deverá apresentar o módulo de um número fornecido. Utilize formulário para Entrada e/ou Saída.-->
+    
+    <script>
+        
+        function module() {
+            var num;
+            
+
+
+            num = Number(document.getElementById("txtn1").value);
+            if (num <= 0){
+                resp = num *(-1);
+            }else
+                resp = num
+
+            document.getElementById("txtmult").value = resp;
+
+        }
+
+
+    </script>
+</head>
+
+<body>
+    
+    </head>
+
+    <body>
+        <h2>Módulo de um número</h2>
+        <form>
+            NUM:
+            <input id="txtn1" type="number" size="10">
+            <br><br>
+            
+            <input id="btnmult" type="button" value="módulo" onclick="module();">
+            <br><br>
+            resposta:
+            <input id="txtmult" type="txt" size="10">
+            <input type="submit" value="Limpar" size="10"></input>
+
+        </form>
+    </body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercício 5</title>
+
+    <!--Efetuar a leitura de quatro número inteiros e apresentar os números que são divisíveis por 2 e 3. Utilize métodos de Entrada e/ou Saída.-->
+
+    <script>
+        function funNumeros() {
+            var num1;
+            var num2;
+            var num3;
+            var num4;
+
+            var num1 = parseInt(prompt("Digite o primeiro numero: "))
+            var num2 = parseInt(prompt("Digite o segundo numero: "))
+            var num3 = parseInt(prompt("Digite o terceiro numero: "))
+            var num4 = parseInt(prompt("Digite o quarto numero: "))
+
+            if ((num1 % 2 == 0)&&(num1 % 3 == 0)) {
+                var resp1 = (num1 + " é divísivel");
+            } else {
+                resp1 = (num1 +" não é divísivel");
+            };
+
+            if ((num2 % 2 == 0) && (num2 % 3 == 0)) {
+                var resp2 = (num2 + " é divísivel");
+            } else {
+                resp2 = (num2 +" não é divísivel");
+            };
+
+            if ((num3 % 2 == 0) && (num3 % 3 == 0)) {
+                var resp3 = (num3 + " é divísivel");
+            } else {
+                resp3 = (num3 +" não é divísivel");
+            };
+
+            if ((num4 % 2 == 0) && (num4 % 3 == 0)) {
+                var resp4 = (num4 + " é divísivel");
+            } else {
+                resp4 = (num4 +" não é divísivel");
+            };
+
+            
+            alert("Resposta: " + "\n" +resp1 +"\n"  +resp2 + "\n" +resp3 + "\n" +resp4)
+        }
+
+
+    </script>
+</head>
+
+<body onload="funNumeros()" ;> <!-- <——— Usar para chamar a função-->
+
+</body>
+
+</html>

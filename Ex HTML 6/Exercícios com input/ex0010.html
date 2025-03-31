@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercício 11</title>
+
+    <!--O cardápio de uma lanchonete é o seguinte...-->
+
+    <script>
+        function funNumeros() {
+            var cod;
+            var quant;
+            var preco;
+
+
+            var cod = document.getElementById("txtn1").value;
+            var quant = document.getElementById("txtn2").value;
+
+            if (cod == 100) {
+                preco = 1.20 * quant
+                resp = ("O total a ser pago será de: R$ " + preco.toFixed(2));
+                document.getElementById("resp").value = resp;
+            } else if (cod == 101) {
+                preco = 1.30 * quant
+                resp = ("O total a ser pago será de: R$ " + preco.toFixed(2));
+                document.getElementById("resp").value = resp;
+            } else if (cod == 102) {
+                preco = 1.50 * quant
+                resp = ("O total a ser pago será de: R$ " + preco.toFixed(2));
+                document.getElementById("resp").value = resp;
+            } else if (cod == 103) {
+                preco = 1.20 * quant
+                resp = ("O total a ser pago será de: R$ " + preco.toFixed(2));
+                document.getElementById("resp").value = resp;
+            } else if (cod == 104) {
+                preco = 1.30 * quant
+                resp = ("O total a ser pago será de: R$ " + preco.toFixed(2));
+                document.getElementById("resp").value = resp;
+            } else if (cod == 105) {
+                preco = 1.50 * quant
+                resp = ("O total a ser pago será de: R$ " + preco.toFixed(2));
+                document.getElementById("resp").value = resp;
+            } else {
+                resp = ("Digite um código válido!");
+                document.getElementById("resp").value = resp;
+            }
+
+
+        }
+
+
+    </script>
+</head>
+
+<body> 
+    <h1>Cardápio</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Especificação</th>
+                <th>Código</th>
+                <th>Preço</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Cachorro Quente</td>
+                <td>100</td>
+                <td>R$ 1,20</td>
+            </tr>
+            <tr>
+                <td>Bauru Simples</td>
+                <td>101</td>
+                <td>R$ 1,30</td>
+            </tr>
+            <tr>
+                <td>Bauru com Ovo</td>
+                <td>102</td>
+                <td>R$ 1,50</td>
+            </tr>
+            <tr>
+                <td>Hambúrguer</td>
+                <td>103</td>
+                <td>R$ 1,20</td>
+            </tr>
+            <tr>
+                <td>Cheeseburguer</td>
+                <td>104</td>
+                <td>R$ 1,30</td>
+            </tr>
+            <tr>
+                <td>Refrigerante</td>
+                <td>105</td>
+                <td>R$ 1,50</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>O que deseja pedir?</h2>
+    <form>
+        Digite o código do seu pedido:
+        <input id="txtn1" type="number" size="10">
+        <br><br>
+        Digite a quantidade do seu pedido:
+        <input id="txtn2" type="number" size="10">
+        <br><br>
+    
+        <input id="btnmult" type="button" value="Calcular" onclick="funNumeros();">
+        <br><br>
+        resposta: 
+        <input id="resp" type="resp" size="30"> 
+
+        <input type="submit" value="Limpar" size="10"></input>
+    
+    </form>
+
+</body>
+
+</html>

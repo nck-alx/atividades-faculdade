@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercício 1</title>
+
+
+<!--Ler 3 (três) valores inteiros e apresente os 3 números em ordem crescente. Utilize métodos de
+Entrada e/ou Saída.-->
+
+    <script>
+        function funOrdernar(){
+            var n1;
+            var n2;
+            var n3;
+
+            var posicao1;
+            var posicao2;
+            var posicao3;
+
+            n1 = parseInt(prompt("Digite o primeiro número: "));
+
+            n2 = parseInt(prompt("Digite o segundo número: "));
+
+            n3 = parseInt(prompt("Digite o terceiro número: "));
+
+            if((n1 < n2)&&(n1 < n3)){
+                posicao1 = n1;
+            }else if((n1 < n2)&&(n1 > n3) || (n2 > n1)&&(n2 < n3)){
+                posicao2 = n1;
+            }else{
+                posicao3 = n1;
+            }
+
+            if ((n2 < n1) && (n2 < n3)) {
+                posicao1 = n2;
+            } else if ((n2 < n1) && (n2 > n3) || (n2 > n1) && (n2 < n3)) {
+                posicao2 = n2;
+            } else {
+                posicao3 = n2;
+            }
+
+            if ((n3 < n1) && (n3 < n2)) {
+                posicao1 = n3;
+            } else if ((n3 < n1) && (n3 > n2) || (n3 > n1) && (n3 < n2)) {
+                posicao2 = n3;
+            } else {
+                posicao3 = n3;
+            }
+
+            alert("Ordem cresente \n" 
+            +"1ª posição: " +posicao1 +"\n"
+            +"2ª Posição: " +posicao2 +"\n"
+            +"3ª Posição: " +posicao3 +"\n"
+            );
+
+
+
+        }
+
+
+    </script>
+</head>
+<body onload="funOrdernar()";> <!-- <——— Usar para chamar a função-->
+    
+</body>
+</html>

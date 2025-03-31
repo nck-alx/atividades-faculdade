@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 9</title>
+    <script>
+        alert("CALCULADORA DE UMA PRESTAÇÃO EM ATRASO");
+    
+        var valor = parseFloat(prompt("Indique o valor da conta em reais: "));
+        var taxa = parseFloat(prompt("Indique o valor da taxa em porcentagem: "));
+        var tempo = parseInt(prompt("Indique o tempo de atraso da conta em meses: "));
+
+        /*"parseFloat": converter o valor para string (números quebrados)*/
+        /*"parseInt" : converter o valor para int (números inteiros)*/
+    
+        var prestacao = valor + (valor * (taxa / 100) * tempo);
+    
+        alert("O valor da prestação, baseada nos valores recebidos, é igual a: R$ " + prestacao.toFixed(2));
+    </script>
+    
+</head>
+<body>
+</body>
+</html>

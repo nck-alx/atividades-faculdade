@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 5</title>
+</head>
+<script>
+    function formula() {
+        var anos = document.getElementById("anos").value;
+        var meses = document.getElementById("meses").value;
+        var dias = document.getElementById("dias").value;
+        
+        var anos_vida = parseInt(anos * 365);
+        var meses_vida = parseInt(meses * 30);
+        var dias_vida = parseInt(dias);
+
+        var resposta = parseInt(anos_vida + meses_vida + dias_vida);
+
+        document.getElementById("resposta").value = resposta;
+
+    }
+
+
+</script>
+
+<body>
+    <h2>Calculadora de idade em dias</h2>
+    Indique quantos anos você tem: <input id="anos" type="number"> <br> <br>
+
+    Indique os meses adicionais: <input id="meses" type="number"> <br> <br>
+
+    Indique os dias adicionais: <input id="dias" type="number"> <br> <br>
+
+    <button onclick="formula()">Calcular</button> <br> <br>
+    Resposta: <input type="text" id="resposta"> dias
+</body>
+
+</html>

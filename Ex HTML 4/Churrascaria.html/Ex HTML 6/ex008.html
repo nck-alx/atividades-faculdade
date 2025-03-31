@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercício 8</title>
+
+    <!--Elaborar um programa que efetue a leitura de um número inteiro e apresentar uma mensagem
+informando se o número é par ou ímpar. Utilize métodos de Entrada e/ou Saída.-->
+
+    <script>
+        function funNumeros() {
+            var num1;
+
+            var num1 = parseInt(prompt("Digite um número: "));
+
+
+            if (num1 % 2 == 1) {
+                var resp = (num1 + " é ímpar");
+            } else {
+                var resp = (num1 + " é par");
+            }
+
+            alert(resp)
+        }
+
+
+    </script>
+</head>
+
+<body onload="funNumeros()" ;> <!-- <——— Usar para chamar a função-->
+
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+
+    <script>
+        function validarNomeEidade(){
+
+            var nome;
+            nome = document.getElementById("txtnome");
+
+            var idade;
+            idade= document.getElementById("txtidade");
+
+            if(nome.value == ""){
+
+                alert("nome em branco");
+                nome.focus();
+
+                return false;
+
+            }
+
+
+            if(idade.value == ""){
+                alert("idade em branco");
+                idade.focus();
+                return false;
+            }
+
+            else if(isNaN(parseInt(idade))){
+                alert("Não é um número");
+                idade.focus();
+                return false;
+
+            }
+
+        }
+
+    </script>
+</head>
+<body>
+
+    <form>
+
+    <label>Nome:</label>
+    <input id="txtnome"  type="text" size="30">
+
+    <br><br>
+    <label>Idade:</label>
+    <input id="txtidade"  type="text" size="30">
+
+    <br><br>
+    <button type="submit" onclick="validarNomeEidade()">
+        Enviar Mensagem
+    </button>
+
+
+
+
+</form>
+</body>
+</html>

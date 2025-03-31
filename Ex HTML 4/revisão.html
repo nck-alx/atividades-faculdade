@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisão para a M1</title>
+    
+    <!--Link CSS-->
+    <style>
+        /*HTML: tag
+        CSS: Seletor*/
+        body{
+            background-color: aliceblue;
+            background-image: linear-gradient(to bottom, white, rgb(183, 221, 255));
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: medium;
+            color: indigo;
+            height: auto;
+            width: auto;
+            font-weight: bolder;
+        }
+/*Herdeiros*/
+        header > h1{
+            padding: ;
+            margin: auto;
+            box-shadow: ;
+            text-shadow: ;
+            text-decoration: ;
+        }
+
+        header > nav > ul {
+            color: aquamarine;
+        }
+
+/*Class*/
+        .Paragrafo{
+            color: rgb(0, 126, 126);
+        }
+
+/*Pseudo-classe: Uma pseudo-classe CSS é uma palavra-chave adicionada a seletores que especifica um estado especial do elemento selecionado.*/
+        a:hover{
+            color: blue;
+        }
+
+/*Pseudo-elemento: Um pseudo-elemento CSS é uma palavra-chave adicionada a um seletor que permite que você estilize uma parte específica do elemento selecionado.*/
+        a::after{}
+
+/*id*/
+        #este{}
+
+    </style>
+
+    <script>
+
+    </script>
+</head>
+<body>
+    <!--Cabeçalho-->
+    <header>
+        <h1></h1>
+            <p></p>
+        <nav>
+            <h1></h1>
+            <ul>
+                <li><a href="">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Parte principal-->
+    <main>
+        <article>
+            <h1>Lorem</h1>
+            <p class="paragrafo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae nulla ullam explicabo porro aperiam iusto. Eligendi molestias deleniti eveniet, soluta quaerat quis a, harum quasi iste iure, voluptates quae sunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium ipsum illo, maiores dolores esse architecto sint, vel laudantium laboriosam sed harum beatae nihil nobis nemo numquam voluptates rem voluptas in.</p>
+            <aside>
+                <p id="este"> — Este conteúdo foi escrito por Lorem ipsum</p>
+            </aside>
+
+            <!--
+                form:get - 128 caracteres
+                form:post - Muitos caracteres (pacotes de dados)
+            -->
+
+            <form action="" method="post">
+                <label>nome: </label>
+                <input type="text" 
+                size="25" 
+                name="nome"><br>
+
+                <label>email: </label>
+                <input type="email" 
+                name="nome" 
+                value="" 
+                placeholder="exemplo@mail.com"
+                size="25"><br>
+
+                <label>Senha</label>
+                <input type="password" 
+                size="25" 
+                placeholder="Deve conter até 8 caracteres"
+                name="nome">
+
+            </form>
+        </article>
+
+    </main>
+
+    <!--Rodapé-->
+    <footer>
+
+    </footer>
+</body>
+</html>

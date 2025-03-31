@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela 1</title>
+
+    <style>
+        table{
+            width: 200px; /*tamanho da tabela*/
+            border-collapse: separate;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: rgb(255, 217, 0);}
+
+        th{
+            background-color: chartreuse;;
+            text-align: center;
+            border-style: inset;
+            border-width: 1px ;
+        }
+        tr{
+            background-color: rgb(255, 217, 0);
+            text-align: left;
+        }
+        td{
+            border: 1px rgb(255, 234, 118);
+            padding: 1px;
+            border-style: inset;
+        }
+        td.Idade{
+            text-align: center;
+        }
+        td.saldo{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <table><caption>Clientes</caption>
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>Saldo</th>
+        </tr>
+
+        <tr >
+            <td>Marcos</td>
+            <td class="Idade">33</td>
+            <td class="saldo">$ 1000,00</td></tr>
+        </tr>
+
+        <tr>
+            <td>Rose</td>
+            <td class="Idade">28</td>
+            <td class="saldo">$ 1500,00</td></tr>
+        </tr>
+
+        <tr>
+            <td>Sérgio</td>
+            <td class="Idade">30</td>
+            <td class="saldo">$ 99,99</td></tr>
+        </tr>
+</table>
+</body>
+</html>

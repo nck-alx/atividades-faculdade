@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 6</title>
+</head>
+<script>
+    function formula() {
+        var circunferencia = document.getElementById("c").value;
+        var raio = circunferencia / 2;
+        var a = 3.14 * raio**2;
+
+        document.getElementById("resposta").value = a;
+
+    }
+
+
+</script>
+
+<body>
+    <h2>Calculadora da área da circunferência</h2>
+    Indique o valor da circunferência: <input id="c" type="number"> <br> <br>
+
+
+    <button onclick="formula()">Calcular</button> <br> <br>
+    Resposta: <input type="text" id="resposta"> cm²
+</body>
+
+</html>

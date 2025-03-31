@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 10</title>
+    <script>
+        //Elaborar um programa que efetue a apresentação do valor da conversão em real de um valor lido em dólar. O programa deve solicitar o valor da cotação do dólar e também a quantidade de dólares disponível com o usuário, para que seja apresentado o valor em moeda brasileira.
+
+        alert("CONVERSOR DE DÓLAR PARA REAL");
+    
+        var cotacao = parseFloat(prompt("Indique o valor da cotação do dólar em reais (substitua a vírgula pelo ponto): "));
+        var reais = parseFloat(prompt("Indique quantos reais deseja converter (substitua a vírgula pelo ponto): "));
+        var result = cotacao * reais;
+
+        /*"parseFloat": converter o valor para string (números quebrados)*/
+        /*"parseInt" : converter o valor para int (números inteiros)*/
+    
+        alert("R$ " +reais.toFixed(2) +" é equivalente a $ " +result.toFixed(2) +" ("+ result.toFixed(2) +" Dólares).");
+    </script>
+    
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        var nome = document.getElementById("txtNome").value;
+        alert("O nome digitado é==>" + nome);
+
+        var idade = document.getElementById("idade").value;
+        alert("A idade digitada é==>" + idade);
+
+        if(nome == '') {
+            alert("Nome em branco");
+            return false;} 
+            else {return true;}
+        
+        if(idade == '') {
+            alert("Nome em branco");
+            return false;} 
+            else {return true;}
+        
+
+    </script>
+</head>
+<body>
+    <form>
+        <label>Nome: </label><input id="txtNome" Required type="text">
+        <br><br>
+        Idade: <input type="txtNome" Required type="text">
+        <br> <br>
+        <input type="submit" value="[Enviar Mensagem]" size="30">
+    </form> 
+    
+</body>
+</html>

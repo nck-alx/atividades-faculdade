@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 3</title>
+    <!--Ler quatros valores referentes a quatro notas escolares de um aluno e imprimir uma mensagem dizendo que o aluno foi aprovado, se o valor da média escolar for maior ou igual a 7. Se o aluno não foiaprovado, indicar uma mensagem informando esta condição. Apresentar junto das mensagens o valor damédia do aluno para qualquer condição. Utilize formulário para Entrada e/ou Saída.-->
+
+    <script>
+        function funNotas() {
+            var nota1;
+            var nota2;
+            var nota3;
+            var nota4;
+
+            var nota1 = parseFloat(document.getElementById("txtn1").value);
+            var nota2 = parseFloat(document.getElementById("txtn2").value);
+            var nota3 = parseFloat(document.getElementById("txtn3").value);
+            var nota4 = parseFloat(document.getElementById("txtn4").value);
+
+            media = (nota1 + nota2 + nota3 + nota4) / 4;
+
+            if (media >= 7) {
+                document.getElementById("txtmult").value = "A média do aluno é igual a: " + media.toFixed(1) + ". Portanto, ele foi aprovado";
+            } else {
+                document.getElementById("txtmult").value = "A média do aluno é igual a: " + media.toFixed(1) + ". Portanto, ele foi reprovado";
+            }
+        }
+
+
+    </script>
+</head>
+
+<body>
+
+    </head>
+
+    <body>
+        <h2>Média de um aluno</h2>
+        <form>
+            Nota 1:
+            <input id="txtn1" type="number" size="10">
+            <br><br>
+            Nota 2:
+            <input id="txtn2" type="number" size="10">
+            <br><br>
+            Nota 3:
+            <input id="txtn3" type="number" size="10">
+            <br><br>
+            Nota 4:
+            <input id="txtn4" type="number" size="10">
+            <br><br>
+
+            <input id="btnmult" type="button" value="Calcular" onclick="funNotas();">
+            <br><br>
+            resposta:
+            <input id="txtmult" type="txt" size="50">
+            <input type="submit" value="Limpar" size="10"></input>
+
+        </form>
+    </body>
+
+</html>

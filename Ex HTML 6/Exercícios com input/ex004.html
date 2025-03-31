@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 4</title>
+    <!--Efetuar a leitura de quatro número inteiros e apresentar os números que são divisíveis por 2 ou 3.
+Utilize formulário para Entrada e/ou Saída.-->
+
+    <script>
+        function funNotas() {
+            var num1;
+            var num2;
+            var num3;
+            var num4;
+            var resp;
+
+            var num1 = parseFloat(document.getElementById("txtn1").value);
+            var num2 = parseFloat(document.getElementById("txtn2").value);
+            var num3 = parseFloat(document.getElementById("txtn3").value);
+            var num4 = parseFloat(document.getElementById("txtn4").value);
+
+
+
+            if ((num1 % 2 == 0) || (num1 % 3 == 0)) {
+                var resp1 = (num1 + " é divísivel");
+                document.getElementById("1").value = resp1
+            } else {
+                resp1 = (num1 + " não é divísivel");
+                document.getElementById("1").value = resp1
+            };
+
+            if ((num2 % 2 == 0) || (num2 % 3 == 0)) {
+                var resp2 = (num2 + " é divísivel");
+                document.getElementById("2").value = resp2
+            } else {
+                resp2 = (num2 + " não é divísivel");
+                document.getElementById("2").value = resp2
+            };
+
+            if ((num3 % 2 == 0) || (num3 % 3 == 0)) {
+                var resp3 = (num3 + " é divísivel");
+                document.getElementById("3").value = resp3
+            } else {
+                resp3 = (num3 + " não é divísivel");
+                document.getElementById("3").value = resp3
+            };
+
+            if ((num4 % 2 == 0) || (num4 % 3 == 0)) {
+                var resp4 = (num4 + " é divísivel");
+                document.getElementById("4").value = resp4
+            } else {
+                resp4 = (num4 + " não é divísivel");
+                document.getElementById("4").value = resp4
+            };
+
+        }
+
+
+    </script>
+</head>
+
+<body>
+
+    </head>
+
+    <body>
+        <h2>Números divísiveis por 2 ou 3</h2>
+        <form>
+            Número 1:
+            <input id="txtn1" type="number" size="10">
+            <br><br>
+            Número 2:
+            <input id="txtn2" type="number" size="10">
+            <br><br>
+            Número 3:
+            <input id="txtn3" type="number" size="10">
+            <br><br>
+            Número 4:
+            <input id="txtn4" type="number" size="10">
+            <br><br>
+
+            <input id="btnmult" type="button" value="Calcular" onclick="funNotas();">
+            <br><br>
+            resposta: <br> <br>
+            <input id="1" type="resp1" size="20"> <br><br>
+            <input id="2" type="resp2" size="20"> <br><br>
+            <input id="3" type="resp3" size="20"> <br><br>
+            <input id="4" type="resp4" size="20"> <br><br>
+            <input type="submit" value="Limpar" size="10"></input>
+
+        </form>
+    </body>
+
+</html>

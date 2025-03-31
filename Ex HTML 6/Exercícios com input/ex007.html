@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercício 7</title>
+
+    <!--Elaborar um programa que efetue a leitura de um número inteiro e apresentar uma mensagem
+informando se o número é par ou ímpar. Utilize métodos de Entrada e/ou Saída.-->
+
+    <script>
+        function funNumeros() {
+            var num;
+
+            var num = parseInt(document.getElementById("txtn").value);
+
+
+            if (num % 2 == 1) {
+                var resp = (num + " é ímpar!");
+                document.getElementById("resp").value = resp;
+            } else {
+                var resp = (num + " é par!");
+                document.getElementById("resp").value = resp;
+            }
+        }
+
+
+    </script>
+</head>
+
+<body>
+
+    <h2>Par ou ímpar</h2>
+    <form>
+        Número:
+        <input id="txtn" type="number" size="10">
+        <br><br>
+
+        <input id="btnmult" type="button" value="Calcular" onclick="funNumeros();">
+        <br><br>
+        resposta: <br> <br>
+        <input id="resp" type="resp" size="30"> <br><br>
+
+        <input type="submit" value="Limpar" size="10"></input>
+
+    </form>
+</body>
+
+</html>

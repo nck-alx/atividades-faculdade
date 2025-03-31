@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercício 3</title>
+
+
+    <!--Ler dois valores numéricos e apresentar a diferença do maior para o menor. Utilize métodos de Entrada e/ou Saída.-->
+
+    <script>
+        function funDiferenca() {
+            var n1;
+            var n2;
+
+            n1 = parseInt(prompt("Digite o primeiro número: "));
+
+            n2 = parseInt(prompt("Digite o segundo número: "));
+
+
+            if ((n1 < n2)) {
+                resp = n2 - n1;
+            } else {
+                resp = n1 - n2;
+            }
+
+
+            alert("A diferença entre " +n1 +" e " +n2 +" é igual a: " +resp);
+
+        }
+
+
+    </script>
+</head>
+
+<body onload="funDiferenca()" ;> <!-- <——— Usar para chamar a função-->
+
+</body>
+
+</html>

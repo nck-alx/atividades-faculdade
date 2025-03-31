@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercício 2</title>
+
+
+    <!--Efetuar a leitura de um valor inteiro positivo ou negativo e apresentar o número lido como sendo um valor positivo, ou seja, o programa deverá apresentar o módulo de um número fornecido. Utilize métodos deEntrada e/ou Saída.-->
+
+    <script>
+        function funModulo() {
+            var num;
+            
+            num = prompt("Digite um número: ");
+
+            if (num >= 0) {
+                resp = num;
+            } else {
+                resp = num * -1;
+            }
+            
+
+            alert("O módulo de " +num +" é igual a: " +resp);
+
+        }
+
+    </script>
+</head>
+
+<body onload="funModulo()" ;> <!-- <——— Usar para chamar a função-->
+
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+/* html tudo = css #
+
+
+*/
+
+body{
+    font-family: Arial, Helvetica, sans-serif ;
+    background-color: bisque;
+}
+
+#h{
+    background-color: azure;
+    color: rgb(0, 0, 0);
+    width: 100px;
+}
+
+#p1{
+    font-size: 25px;
+    font-weight: bolder;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+#head2{
+    background-color: rgb(255, 244, 197);
+    width: 150px;
+    text-align: center;
+    text-decoration: line-through;
+}
+
+.decoracao{
+    background-color: chocolate;
+}
+

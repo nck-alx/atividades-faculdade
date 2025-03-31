@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size:18px;}
+        h2{
+            text-align: center;
+        }
+            
+        table{
+            width: 700px; /*tamanho da tabela*/
+            border-collapse: collapse;
+            border: 3px solid black;
+            text-align: center;}
+
+        th{ /*título das colunas*/
+            background-color: antiquewhite;
+            border: 2px solid black;
+        }
+        tr{
+            background-color: rgb(255, 255, 255); /*cor das células*/      
+        }
+
+        td{
+            border: 2px solid black; /*cor das bordas internas*/
+            padding: 5px; /*distância entre as células*/
+        } 
+
+        td.dado {
+            background-color: bisque;
+        } /*Cor de célula individual*/
+</style>
+
+<!--confirm()
+    
+    -->
+
+    
+    
+    <script>
+    alert("Hello World")
+    confirm("Qual?")
+    prompt("Qual é o seu nome?")
+
+
+
+    </script>
+</head>
+<body>
+    <h1>Tabelas</h1>
+    <hr>
+    <!--hierarquia-->
+        <table> <caption>Dados Pessoais</caption>
+        <tr><!-- primeira linha -->
+        
+        <th class="dado">Nomes</th> <!--Dados da Primeira Linha-->
+        <th class="dado">Idade</th> <!--Dados da Primeira Linha-->
+        <th class="dado">CPF</th>
+        <th class="dado">Endereço</th>
+
+        </tr>
+        <tr> <!--Segunda linha-->
+            <td>Nicolas Alexandre</td>
+            <td>18</td>
+            <td>44488899914</td>
+            <td>Rua Nº 1, Bairro Jardim das Flores</td>
+        </tr>
+        <tr> <!-- Terceira linha-->
+            <td>Maria Clara</td>
+            <td>21</td>
+            <td>47383947279</td>
+            <td>Rua Nº 2, Bairro Campo Tóquio</td>
+        </tr>
+        <tr> <!-- Quarta linha-->
+            <td>Mateus Henrique</td>
+            <td>17</td>
+            <td>75849392588</td>
+            <td>Rua Nº 3, Bairro Liberdade</td>
+        </tr>
+        </table>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+
+        <table class="tab">
+            <tr>
+                <th colspan="2">Produtos</th>
+                <th colspan="2">Preço</th>
+            </tr>
+            <tr>
+                <th>Código</th>
+                <th>Nome</th>
+                <th>R$</th>
+                <th>$</th>
+            </tr>
+            <tr></tr>
+        </table>
+<br><br><br>
+        <form>
+            Nome: <input type="text" name="" value="Escreva seu nome" size="25"> <br>
+            
+            Estado Civil: 
+            Solteiro <input type="radio" name="name" value="S">
+            Casado <input type="radio" name="name" value="C">
+            Namorando <input type="radio" name="name" value="N">
+            <br>
+            Botão: <input type="button" name="name" value="Enviar">
+        </form>
+<br><br><br>
+        <form method="">
+
+        Nome: <input 
+        type="chkdisciplina" 
+        size="30" 
+        value=""> <br><br>
+        Gênero: <br>
+        <input type="radio" name="rdbhomepage" value="F"> Feminino
+        <input type="radio" name="rdbhomepage" value="M"> Masculino
+        <input type="radio" name="rdbhomepage" value="N"> Prefiro não Informar
+<br><br>
+            Idade: <br>
+            <select option name="nomedalista">
+                <option value="valorderetorno">0</option>
+                <option value="valorderetorno">1</option>
+                <option value="valorderetorno">2</option>
+                <option value="valorderetorno">3</option>
+                <option value="valorderetorno">4</option>
+                <option value="valorderetorno">5</option>
+                <option value="valorderetorno">6</option>
+                <option value="valorderetorno">7</option>
+                <option value="valorderetorno">8</option>
+                <option value="valorderetorno">9</option>
+                <option value="valorderetorno">10</option>
+                <option value="valorderetorno">11</option>
+                <option value="valorderetorno">12</option>
+                <option value="valorderetorno">13</option>
+                <option value="valorderetorno">14</option>
+                <option value="valorderetorno">15</option>
+                <option value="valorderetorno">16</option>
+                <option value="valorderetorno">17</option>
+                <option value="valorderetorno">18</option>
+                <option value="valorderetorno">19</option>
+                <option value="valorderetorno">20</option>
+                
+            </select>
+            <br>
+            Observações: <br>
+            <textarea name="nome" id="" cols="30" rows="7"></textarea>
+<br>
+            <input type="submit" value="enviar" size="30">
+            <input type="reset" value="limpar" size="30">
+        </form>
+</body>
+</html>

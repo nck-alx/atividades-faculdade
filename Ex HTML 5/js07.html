@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 7</title>
+</head>
+<script>
+    function formula() {
+        var valor = parseFloat(document.getElementById("valor").value);
+        var taxa = parseFloat(document.getElementById("taxa").value);
+        var tempo = parseInt(document.getElementById("tempo").value);
+
+        var prestacao = parseFloat(valor + (valor * (taxa / 100) * tempo)).toFixed(2);
+
+        document.getElementById("resposta").value = prestacao;
+
+    }
+
+
+</script>
+
+<body>
+    <h2>Calculadora de prestação em atraso</h2>
+    Indique o valor da prestação: R$<input id="valor" type="number"> <br> <br>
+
+    Indique o percentual da taxa de atraso por mês:<input id="taxa" type="number"> <br> <br>
+
+    Indique a quantidade de meses que a conta está atrasada: <input id="tempo" type="number"> <br> <br>
+
+
+    <button onclick="formula()">Calcular</button> <br> <br>
+    Resposta: R$ <input type="text" id="resposta"> 
+</body>
+
+</html>

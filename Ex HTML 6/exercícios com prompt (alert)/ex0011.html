@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercício 11</title>
+
+    <!--O cardápio de uma lanchonete é o seguinte...-->
+
+    <script>
+        function funNumeros() {
+            var cod;
+            var quant;
+            var preco;
+            
+
+            var cod = prompt("Digite o código do seu pedido: ");
+            var quant = prompt("Digite quantos você deseja pedir: ");
+
+            if (cod == 100){
+                preco = 1.20 * quant
+                alert("O total a ser pago será de: R$" +preco.toFixed(2));
+            }else if(cod == 101){
+                preco = 1.30 * quant
+                alert("O total a ser pago será de: R$" +preco.toFixed(2));
+            } else if (cod == 102) {
+                preco = 1.50 * quant
+                alert("O total a ser pago será de: R$" +preco.toFixed(2));
+            }else if(cod == 103){
+                preco = 1.20 * quant
+                alert("O total a ser pago será de: R$" +preco.toFixed(2));
+            }else if(cod == 104){
+                preco = 1.30 * quant
+                alert("O total a ser pago será de: R$" +preco.toFixed(2));
+            } else if (cod == 105) {
+                preco = 1.50 * quant
+                alert("O total a ser pago será de: R$" +preco.toFixed(2));
+            }
+
+            
+
+        }
+
+
+    </script>
+</head>
+
+<body onload="funNumeros()" ;> <!-- <——— Usar para chamar a função-->
+    <h1>Cardápio</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Especificação</th>
+                <th>Código</th>
+                <th>Preço</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Cachorro Quente</td>
+                <td>100</td>
+                <td>R$ 1,20</td>
+            </tr>
+            <tr>
+                <td>Bauru Simples</td>
+                <td>101</td>
+                <td>R$ 1,30</td>
+            </tr>
+            <tr>
+                <td>Bauru com Ovo</td>
+                <td>102</td>
+                <td>R$ 1,50</td>
+            </tr>
+            <tr>
+                <td>Hambúrguer</td>
+                <td>103</td>
+                <td>R$ 1,20</td>
+            </tr>
+            <tr>
+                <td>Cheeseburguer</td>
+                <td>104</td>
+                <td>R$ 1,30</td>
+            </tr>
+            <tr>
+                <td>Refrigerante</td>
+                <td>105</td>
+                <td>R$ 1,50</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>

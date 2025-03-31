@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 3</title>
+    <script>
+        function conversao(){
+            var far = document.getElementById("graus").value;
+            var C = parseInt(far - 32) * (5 / 9);
+            document.getElementById("resposta").value = C
+        };
+    </script>
+</head>
+
+<body>
+
+
+
+    <h2>Conversor de graus celsius para Fahrenheit</h2>
+
+    Digite a temperatura em graus Fahrenheit: <input type="number" id="graus"><br>
+    <button onclick="conversao()">converter</button>
+    <br><br>
+    Conversão em graus Celsius:
+    <input type="text" id="resposta"><br>
+
+</body>
+
+</html>

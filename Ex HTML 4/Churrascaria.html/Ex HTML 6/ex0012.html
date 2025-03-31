@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercício 12</title>
+
+    <!--Uma empresa concederá...-->
+
+    <script>
+        function funNumeros() {
+            var salario;
+            var cargo;
+            var novo_salario;
+            
+
+            var salario = parseFloat(prompt("Digite o salario do funcionário: "));
+            var cargo = parseInt(prompt("Digite o código do cargo do funcionário: "));
+
+            if (cargo == 101){
+                novo_salario = salario + (salario * 0.10)
+                alert("O novo salario será de: R$" +novo_salario.toFixed(2));
+            } else if (cargo == 102) {
+                novo_salario = salario + (salario * 0.20)
+                alert("O novo salario será de: R$" + novo_salario.toFixed(2));
+            } else if (cargo == 103){
+                novo_salario = salario + (salario * 0.30)
+                alert("O novo salario será de: R$" +novo_salario.toFixed(2));
+            } else {
+                novo_salario = salario + (salario * 0.40)
+                alert("O novo salario será de: R$" + novo_salario.toFixed(2));
+            }
+        }
+
+    </script>
+</head>
+
+<body onload="funNumeros()" ;> <!-- <——— Usar para chamar a função-->
+    <h1>Tabela de Cargos</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Código</th>
+                <th>Cargo</th>
+                <th>Percentual</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>101</td>
+                <td>Gerente</td>
+                <td>10%</td>
+            </tr>
+            <tr>
+                <td>102</td>
+                <td>Engenheiro</td>
+                <td>20%</td>
+            </tr>
+            <tr>
+                <td>103</td>
+                <td>Técnico</td>
+                <td>30%</td>
+            </tr>
+            
+        </tbody>
+    </table>
+
+</body>
+
+</html>

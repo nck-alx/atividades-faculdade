@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercício 9</title>
+
+    <!--Elaborar um programa que efetue a leitura de um valor inteiro, e efetue a sua apresentação, caso o
+    valor não seja maior que três. Utilize métodos de Entrada e/ou Saída.-->
+
+    <script>
+        function funNumeros() {
+            var num = parseInt(document.getElementById("txtn").value);
+
+            if (num <= 3) {
+                resp = (+num + ", este número é menor ou igual a 3.");
+                document.getElementById("resp").value = resp;
+            } else {
+                resp = ("Seu número não é apresentável");
+                document.getElementById("resp").value = resp;
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <h2>O número é maior que 3?</h2>
+    <form>
+        Número:
+        <input id="txtn" type="number" size="10">
+        <br><br>
+
+        <input id="btnmult" type="button" value="Calcular" onclick="funNumeros();">
+        <br><br>
+        resposta: <br> <br>
+        <input id="resp" type="resp" size="30"> <br><br>
+
+        <input type="submit" value="Limpar" size="10"></input>
+
+    </form>
+</body>
+
+</html>

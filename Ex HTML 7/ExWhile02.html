@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 2</title>
+<script> /*Fazer um programa que receba um número e mostre o fatorial desse número. Utilize métodos de
+Entrada e Saída*/
+
+    function cal(){
+        let f = 1;
+        let x = parseInt(prompt("Digite um valor não negativo a ser mostrado o fatorial: "));
+        let num = x;
+
+        while (num > 0){
+            f = f * num;
+            num--;
+            
+        }
+
+        alert("O valor fatorial de " +x +" é igual a: " +f);
+    } 
+
+</script>
+
+</head>
+<body onload = cal()>
+
+</body>
+</html>

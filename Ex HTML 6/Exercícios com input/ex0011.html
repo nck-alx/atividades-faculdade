@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercício 11</title>
+
+    <!--Uma empresa concederá...-->
+
+    <script>
+        function funNumeros() {
+
+            var novo_salario;
+            var diferenca;
+            var resp;
+
+
+            var salario = parseFloat(document.getElementById("txtn1").value);
+            var cargo = parseInt(document.getElementById("txtn2").value);
+
+            if (cargo == 101) {
+                novo_salario = salario + (salario * 0.10);
+                diferenca = novo_salario - salario;
+                resp = ("O novo salario será de: R$" + novo_salario.toFixed(2)+". A diferença será de: R$ " +diferenca.toFixed(2));
+            } else if (cargo == 102) {
+                novo_salario = salario + (salario * 0.20);
+                diferenca = novo_salario - salario;
+                resp = ("O novo salario será de: R$" + novo_salario.toFixed(2) + ". A diferença será de: R$ " + diferenca.toFixed(2));
+            } else if (cargo == 103) {
+                novo_salario = salario + (salario * 0.30);
+                diferenca = novo_salario - salario;
+                resp = ("O novo salario será de: R$" + novo_salario.toFixed(2) + ". A diferença será de: R$ " + diferenca.toFixed(2));
+            } else if ((cargo != 101) && (cargo != 102) && (cargo != 103)){
+                novo_salario = salario + (salario * 0.40);
+                diferenca = novo_salario - salario;
+                resp = ("O novo salario será de: R$" + novo_salario.toFixed(2) + ". A diferença será de: R$ " + diferenca.toFixed(2));
+            } else {
+                resp = ("Digite um código válido!")
+            }
+
+            document.getElementById("resp").value = resp;
+        }
+
+    </script>
+</head>
+
+<body> 
+    <h1>Tabela de Cargos</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Código</th>
+                <th>Cargo</th>
+                <th>Percentual</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>101</td>
+                <td>Gerente</td>
+                <td>10%</td>
+            </tr>
+            <tr>
+                <td>102</td>
+                <td>Engenheiro</td>
+                <td>20%</td>
+            </tr>
+            <tr>
+                <td>103</td>
+                <td>Técnico</td>
+                <td>30%</td>
+            </tr>
+
+        </tbody>
+    </table>
+
+    <h2>Novo Salário!</h2>
+    <form>
+        Digite o salário atual do funcionário:
+        <input id="txtn1" type="number" size="10">
+        <br><br>
+        Digite o código do cargo do funcionário:
+        <input id="txtn2" type="number" size="10">
+        <br><br>
+    
+        <input id="btnmult" type="button" value="Calcular" onclick="funNumeros();">
+        <br><br>
+        resposta:
+        <input id="resp" type="text" size="60">
+    
+        <input type="submit" value="Limpar" size="10"></input>
+    
+    </form>
+
+</body>
+
+</html>

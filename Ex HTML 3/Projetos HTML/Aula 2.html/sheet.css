@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+body{
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0) 400px, rgb(99, 99, 99));
+}
+
+header > h1{
+    color: white;
+}
+header > p{
+    color: white;
+}
+
+main > article > p{
+    color: white;
+}
+main > article > h2{
+    color: white;
+}
+main > article > aside > h3{
+    color: white
+}
+main > article > aside > ul{
+    color: white
+}
+main > article > aside > p{
+    color: white
+}
+
+footer > p{
+    color: white
+}

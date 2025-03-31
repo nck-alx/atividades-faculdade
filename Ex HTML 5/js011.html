@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 11</title>
+</head>
+<script>
+    function formula() {
+        var N = document.getElementById("num").value;
+
+
+        var resposta = N % 6;
+
+        document.getElementById("resposta").value = resposta;
+
+    }
+
+
+</script>
+
+<body>
+    <h2>Restante de uma divisão por 6</h2>
+    Indique o valor de N: <input id="num" type="number"> <br> <br>
+
+
+    <button onclick="formula()">Calcular</button> <br> <br>
+    O resto de N dividido por 6 é: <input type="text" id="resposta">
+</body>
+
+</html>

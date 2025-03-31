@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 8</title>
+</head>
+<script>
+    function formula() {
+        var cotacao = parseFloat(document.getElementById("cotacao").value);
+        var dolares = parseFloat(document.getElementById("dolares").value);
+
+        var conversao = parseFloat(cotacao * dolares).toFixed(2);
+
+        document.getElementById("resposta").value = conversao;
+
+    }
+
+
+</script>
+
+<body>
+    <h2>Conversor de real em dólar</h2>
+    Indique o valor da cotação do dólar: R$ <input id="cotacao" type="number"> <br> <br>
+
+    Indique quantos dólares serão convertidos em reais: $<input id="dolares" type="number"> <br> <br>
+
+
+    <button onclick="formula()">Calcular</button> <br> <br>
+    Resposta: R$ <input type="text" id="resposta">
+</body>
+
+</html>

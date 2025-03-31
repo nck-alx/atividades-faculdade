@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercício 6</title>
+
+    <!--Efetuar a leitura de cinco números inteiros e identificar o maior e o menor valor. Não execute a
+ordenação de valores. Utilize métodos de Entrada e/ou Saída.-->
+
+    <script>
+        function funNumeros() {
+            var num1;
+            var num2;
+            var num3;
+            var num4;
+            var num5;
+            var resp1;
+            var resp2;
+
+            var num1 = parseInt(document.getElementById("txtn1").value)
+            var num2 = parseInt(document.getElementById("txtn2").value)
+            var num3 = parseInt(document.getElementById("txtn3").value)
+            var num4 = parseInt(document.getElementById("txtn4").value)
+            var num5 = parseInt(document.getElementById("txtn5").value)
+
+
+
+
+            if ((num1 > num2) && (num1 > num3) && (num1 > num4) && (num1 > num5)) {
+                var resp1 = (num1 + " é o maior número");
+                document.getElementById("resp1").value = resp1;
+            } else if ((num2 > num1) && (num2 > num3) && (num2 > num4) && (num2 > num5)) {
+                resp1 = (num2 + " é o maior número");
+                document.getElementById("resp1").value = resp1;
+            } else if ((num3 > num1) && (num3 > num2) && (num3 > num4) && (num3 > num5)) {
+                resp1 = (num3 + " é o maior número");
+                document.getElementById("resp1").value = resp1;
+            } else if ((num4 > num1) && (num4 > num2) && (num4 > num3) && (num4 > num5)) {
+                resp1 = (num4 + " é o maior número");
+                document.getElementById("resp1").value = resp1;
+            } else {
+                resp1 = (num5 + " é o maior número");
+                document.getElementById("resp1").value = resp1;
+            };
+
+            if ((num1 < num2) && (num1 < num3) && (num1 < num4) && (num1 < num5)) {
+                var resp2 = (num1 + " é o menor número");
+                document.getElementById("resp2").value = resp2;
+            } else if ((num2 < num1) && (num2 < num3) && (num2 < num4) && (num2 < num5)) {
+                resp2 = (num2 + " é o menor número");
+                document.getElementById("resp2").value = resp2;
+            } else if ((num3 < num1) && (num3 < num2) && (num3 < num4) && (num3 < num5)) {
+                resp2 = (num3 + " é o menor número");
+                document.getElementById("resp2").value = resp2;
+            } else if ((num4 < num1) && (num4 < num2) && (num4 < num3) && (num4 < num5)) {
+                resp2 = (num4 + " é o menor número");
+                document.getElementById("resp2").value = resp2;
+            } else {
+                resp2 = (num5 + " é o menor número");
+                document.getElementById("resp2").value = resp2;
+            };
+
+            
+        }
+
+
+    </script>
+</head>
+
+<body>
+
+    <h2>Maior e menor valor dentre cinco números</h2>
+    <form>
+        Número 1:
+        <input id="txtn1" type="number" size="10">
+        <br><br>
+        Número 2:
+        <input id="txtn2" type="number" size="10">
+        <br><br>
+        Número 3:
+        <input id="txtn3" type="number" size="10">
+        <br><br>
+        Número 4:
+        <input id="txtn4" type="number" size="10">
+        <br><br>
+        Número 5:
+        <input id="txtn5" type="number" size="10">
+        <br><br>
+
+        <input id="btnmult" type="button" value="Calcular" onclick="funNumeros();">
+        <br><br>
+        resposta: <br> <br>
+        <input id="resp1" type="resp" size="30"> <br><br>
+        <input id="resp2" type="resp" size="30"> <br><br>
+
+        <input type="submit" value="Limpar" size="10"></input>
+
+    </form>
+</body>
+
+</html>

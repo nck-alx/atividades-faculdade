@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 4</title>
+</head>
+<script>
+    function formula(){
+        var H = document.getElementById("altura").value;
+        var C = document.getElementById("circunferência").value;
+        var R = C / 2;
+        var resposta = 3.14159 * (R**2) * H;
+        document.getElementById("resposta").value = resposta;
+
+    }
+
+
+</script>
+<body>
+    <h2>Calculadora de volume de lata de óleo</h2>
+    Indique o valor da altura da lata de óleo em centímetros <input id="altura" type="number"> <br> <br>
+
+    Indique o valor da circunferência da lata de óleo em centímetros <input id="circunferência" type="number"> <br> <br> 
+    
+    <button onclick="formula()">Calcular</button> <br> <br>
+    Resposta: <input type="text" id="resposta"> centímetros cúbicos (cm²)
+</body>
+</html>

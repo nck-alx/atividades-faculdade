@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 1</title>
+</head>
+<body>
+    <script>
+
+        function multi() {
+            var n1;
+            var n2;
+            var mult;
+
+
+            n1 = Number(document.getElementById("txtn1").value);
+            n2 = Number(document.getElementById("txtn2").value);
+            mult = n1 * n2;
+            document.getElementById("txtmult").value = mult;
+
+        }
+        
+
+    </script>
+    </head>
+
+    <body>
+        <h2>Multiplicador de dois números</h2>
+        <form>
+            N1:
+            <input id="txtn1" type="number" size="10">
+            <br><br>
+            N2:
+            <input id="txtn2" type="number" size="10">
+            <br><br>
+            <input id="btnmult" type="button" value="multiplicar" onclick="multi();">
+            <br><br>
+            resposta:
+            <input id="txtmult" type="txt" size="10">
+            <input type="submit" value="Limpar" size="10"></input>
+
+        </form>
+    </body>
+    
+    </html>
+</body>
+</html>

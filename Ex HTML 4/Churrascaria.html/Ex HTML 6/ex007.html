@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercício 7</title>
+
+    <!--Efetuar a leitura de cinco números inteiros e identificar o maior e o menor valor. Não execute a
+ordenação de valores. Utilize métodos de Entrada e/ou Saída.-->
+
+    <script>
+        function funNumeros() {
+            var num1;
+            var num2;
+            var num3;
+            var num4;
+            var num5;
+            var resp1;
+            var resp2;
+
+            var num1 = parseInt(prompt("Digite o primeiro numero: "))
+            var num2 = parseInt(prompt("Digite o segundo numero: "))
+            var num3 = parseInt(prompt("Digite o terceiro numero: "))
+            var num4 = parseInt(prompt("Digite o quarto numero: "))
+            var num5 = parseInt(prompt("Digite o quinto numero: "))
+
+            
+            
+
+            if ((num1 > num2) && (num1 > num3) && (num1 > num4) && (num1 > num5)) {
+                var resp1 = (num1 + " é o maior número");
+            } else if ((num2 > num1) && (num2 > num3) && (num2 > num4) && (num2 > num5)) {
+            resp1 = (num2 + " é o maior número");
+                } else if ((num3 > num1) && (num3 > num2) && (num3 > num4) && (num3 > num5)) {
+            resp1 = (num3 + " é o maior número");
+                } else if ((num4 > num1) && (num4 > num2) && (num4 > num3) && (num4 > num5)) {
+            resp1 = (num4 + " é o maior número");
+                } else {
+            resp1 = (num5 + " é o maior número");
+                };
+
+                if ((num1 < num2) && (num1 < num3) && (num1 < num4) && (num1 < num5)) {
+                var resp2 = (num1 + " é o menor número");
+            } else if ((num2 < num1) && (num2 < num3) && (num2 < num4) && (num2 < num5)) {
+            resp2 = (num2 + " é o menor número");
+                } else if ((num3 < num1) && (num3 < num2) && (num3 < num4) && (num3 < num5)) {
+            resp2 = (num3 + " é o menor número");
+                } else if ((num4 < num1) && (num4 < num2) && (num4 < num3) && (num4 < num5)) {
+            resp2 = (num4 + " é o menor número");
+                } else {
+            resp2 = (num5 + " é o menor número");
+                };
+            
+            alert(resp1 +"\n" +resp2);
+        }
+
+
+    </script>
+</head>
+
+<body onload="funNumeros()" ;> <!-- <——— Usar para chamar a função-->
+
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercício 6</title>
+
+    <!--Escreva um algoritmo que leia 3 números inteiros e mostre o maior deles. Utilize métodos de
+    Entrada e/ou Saída.-->
+
+    <script>
+        function funNumeros() {
+            var num1;
+            var num2;
+            var num3;
+
+
+            var num1 = parseInt(prompt("Digite o primeiro numero: "))
+            var num2 = parseInt(prompt("Digite o segundo numero: "))
+            var num3 = parseInt(prompt("Digite o terceiro numero: "))
+
+            if ((num1 > num2)&&(num1 > num3)) {
+                var resp = (num1 +" é o maior número");
+            } else if ((num2 > num1)&&(num2 > num3)) {
+                resp = (num2 +" é o maior número");
+            } else if ((num3 > num1)&&(num3 > num2)) {
+                resp = (num3 +" é o maior número");
+            } else {
+                resp = ("Números inválidos, ou algum número tem o mesmo valor que outro")
+            }
+
+            
+
+            
+            alert(resp);
+        }
+
+
+    </script>
+</head>
+
+<body onload="funNumeros()"> <!-- <——— Usar para chamar a função-->
+
+</body>
+
+</html>

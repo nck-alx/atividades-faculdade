@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+a:hover{
+    background-color: rgb(255, 251, 0);
+    text-decoration: overline;
+    color: rgb(0, 0, 0);
+}
+
+a::after{
+    content: ' <<<';
+    color: darkblue;
+}
+
+a::before{
+    content: '>>> ';
+    color: darkgreen;
+}

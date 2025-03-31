@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercício 10</title>
+
+    <!--Elaborar um programa que efetue a leitura de um valor inteiro, e efetue a sua apresentação, caso o
+    valor não seja maior que três. Utilize métodos de Entrada e/ou Saída.-->
+
+    <script>
+        function funNumeros() {
+            var num = parseInt(prompt("Digite um número: "));
+
+
+            if (num <= 3) {
+                alert(+num +" \nEste é o seu número.");
+            } else {
+                alert("Seu número não é apresentável");
+            }
+        }
+
+
+    </script>
+</head>
+
+<body onload="funNumeros()" ;> <!-- <——— Usar para chamar a função-->
+
+</body>
+
+</html>

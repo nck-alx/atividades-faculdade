@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 2</title>
+    <!--Ler dois valores numéricos e apresentar a diferença do maior para o menor. Utilize formulário para
+Entrada e/ou Saída.-->
+
+    <script>
+
+        function diferenca() {
+            var n1;
+            var n2;
+
+
+
+            n1 = Number(document.getElementById("txtn1").value);
+            n2 = Number(document.getElementById("txtn2").value);
+
+            if (n1 > n2) {
+                resp = n1 - n2;
+            } else
+                resp = n2 - n1;
+
+            document.getElementById("txtmult").value = resp;
+
+        }
+
+
+    </script>
+</head>
+
+<body>
+
+    </head>
+
+    <body>
+        <h2>Diferença entre dois números</h2>
+        <form>
+            Número 1:
+            <input id="txtn1" type="number" size="10">
+            <br><br>
+            Número 2:
+            <input id="txtn2" type="number" size="10">
+            <br><br>
+
+            <input id="btnmult" type="button" value="Calcular" onclick="diferenca();">
+            <br><br>
+            resposta:
+            <input id="txtmult" type="txt" size="10">
+            <input type="submit" value="Limpar" size="10"></input>
+
+        </form>
+    </body>
+
+</html>

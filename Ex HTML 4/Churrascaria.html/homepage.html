@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brazil Churrasco</title>
+    <link rel="icon" href="Brazil Churrasco icon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="homepagee.css">
+
+    <script>
+        /*Não consegui enviar o arquivo do JavaScript separado, por isso tive que colocar junto no arquivo HTML*/
+        
+function FazerReserva(){
+
+var nome = document.getElementById("nomereserva").value;
+
+var email = document.getElementById("emailreserva").value;
+
+var telefone = document.getElementById("telreserva").value;
+
+var data = document.getElementById("datareserva").value;
+
+var hora = document.getElementById("horareserva").value;
+
+    if(nome.value === ""){
+        alert("nome em branco");
+        nome.focus();
+        return false;
+    }
+
+    if(email.value === ""){
+        alert("E-mail em branco!");
+        email.focus();
+        return false;
+    }
+
+    if(telefone.value === ""){
+        alert("E-mail em branco!");
+        email.focus();
+        return false;
+    }
+
+    if (data.value === "") {
+        alert("Data em branco!");
+        data.focus();
+        return false;
+    }
+
+    if (hora.value === "") {
+        alert("Hora em branco!");
+        hora.focus();
+        return false;
+    }
+
+alert("Reserva realizada com sucesso!")
+return true;
+
+};
+
+    </script>
+    
+</head>
+<body>
+    <header>
+        <br>
+    <table>
+        
+        <tr>
+        <td class="links"><a href="">Home</a></td>
+        <td><a href="#menu">Menu</a></td>
+        <td><a href="#reservas">Reservas</a></td>
+        <td><a href="#contato">Contato</a></td>
+        </tr>
+    </table>
+
+    </header>
+
+    <main>
+        <br>
+        <h2>Bem Vindo ao Brazil Churrasco!</h2>
+        <h3>Desfrute do melhor churrasco do país!</h3>
+        
+        <button>Cardápio</button>
+
+        <br><br><br><br><br><br>
+
+        <h2 id="menu">Pratos do Dia</h2><br>
+        <table><tr>
+        <td><img src="picanha.jfif" alt=""></td>
+        <td><img src="cordeiro.jfif" alt=""></td>
+        <td><img src="fraldinha.jfif" alt=""></td>
+        </tr>
+        <tr>
+            <td><b>Picanha</b></td>
+            <td><b>Cordeiro</b></td>
+            <td><b>Fraldinha</b></td>
+        </tr>
+        <tr>
+            <td>R$ 39,90</td>
+            <td>R$ 34,90</td>
+            <td>R$ 29,90</td>
+        </tr>
+        </table>
+
+    <br><br>
+
+        <!--Reservas-->
+        <h4 id="reservas">Reservas</h4>
+        <div class="pai">
+            <form class="filho">
+
+                <label for="name">Nome: </label>
+                <input required type="text" name="name" id="nomereserva"><br>
+
+                <label for="email">E-mail: </label>
+                <input required type="email" name="email" id="emailreserva"><br>
+
+                <label for="tel">Telefone: </label>
+                <input required type="tel" name="tel" id="telreserva"><br>
+
+                <label for="date">Data: </label>
+                <input 
+                require type="date" id="datareserva"><br>
+
+                <label for="time">Hora: </label>
+                <input required type="time" width="35" id="horareserva">
+                <br><br>
+
+                <button 
+                id="reservar" 
+                required type="submit"
+                onclick="FazerReserva()">Reservar</button>
+            </form>
+        </div>
+        <br><br>
+        <br>
+    </main>
+    <footer>
+        <div id="contato" class="contato">
+            <h2>Contato</h2>
+            <p>Endereço: Rua da Picanha, 123 - Xique Xique, BA</p>
+            <p>Telefone: (11) 4002-8922</p>
+            <p>E-mail: [contato@brazilchurrasco.com.br]</p>
+        </div>
+
+        <div class="copyright">
+            <br>
+            <h2 class="copy">&copy; 2024 Brazil Churrasco</h2>
+        </div>
+
+    </footer>
+       
+    
+</body>
+</html>
